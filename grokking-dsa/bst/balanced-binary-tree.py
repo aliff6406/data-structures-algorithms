@@ -6,7 +6,8 @@
 3. -1 propogates up
 
 Time Complexity: O(n) each node is visited exactly once
-Space Complexity: worst case scenario - O(n) if tree is imbalanced
+Space Complexity: worst case scenario - O(n) if tree is imbalanced - maximum height of the recursive
+stack at any point in time
 """
 
 
