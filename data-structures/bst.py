@@ -4,6 +4,35 @@ class Node:
         self.left = None
         self.right = None
 
+""" 
+Time Complexity:
+- best case scenario, when the bst is balanced, search, insert and delete takes O(logn)
+- worst case scenario, when the bst is imbalanced, O(n)
+
+Space Complexity:
+- O(n) - memory required to store tree elements is proportional to input size (number of nodes)
+
+Issues:
+- BSTs can become imbalanced due to the order in which elements are inserted
+- Degenerate trees: extreme cases of imbalanced BST where each node only has one child essentially
+forming a linked list. Time complexities become O(n) - killing the advantages of BSTs
+
+- Complex Balancing: ensuring a BST remains balanced after insertion / deletion
+requires complex balancing algos. Self balancing trees (AVL trees and Red-Black trees) exist
+but implementing these balancing mechanisms adds overhead and complexity
+
+- Lack of Unique Keys: generally do not support duplicate keys. The behaviour may vary depending
+on the implementation when attempting to insert a duplicate node. 
+
+- Memory Overhead: each node in a BST requires additional memory for storing pointers to the left and right children.
+Memory overhead can become significant for large datasets, especially if the tree is poorly balanced.
+
+- Not Suitable for Dynamic Dataset: not well-suited for datasets that frequently change in size. 
+
+- Limited Search Performance for Equal Keys: searching for the next greater or lesser element for
+equal keys (node values) requires additional operations and may be less efficient.
+"""
+
 class BST:
     def __init__(self):
         self.root = None
