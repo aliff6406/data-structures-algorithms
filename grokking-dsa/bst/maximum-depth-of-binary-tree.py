@@ -5,6 +5,12 @@
 2. The depth increases by one each time we move to a child node.
 3. If a node is a leaf (no children), compare its depth with the current max depth and update if necessary.
 4. Recursively apply this process to each node's left and right children.
+
+- Time Complexity: O(n) - each node is visited exactly once
+- Space Complexity: WCS = O(n), BCS = O(logn). In the best case scenario, when the bst is balanced,
+the height of the tree is logn, hence the recursion stack is also logn. However if the tree is imbalanced
+the recursion stack is n. The space complexity of this algorithm is equal to the maximum depth of the recursion stack
+at any point in time.
 """
 
 class TreeNode:
