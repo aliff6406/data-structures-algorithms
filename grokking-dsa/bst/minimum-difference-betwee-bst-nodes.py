@@ -4,7 +4,8 @@
 1. Perform in order traversal to create a list of sorted nodes
 2. Find the minimum difference by comparing each pair in the list
 
-Time Complexity: 
+Time Complexity: O(n)
+Space Copmlexity: O(n)
 """
 
 class TreeNode:
