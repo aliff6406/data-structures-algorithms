@@ -18,7 +18,7 @@ class Solution:
         # List to hold the values in order.
         self.nodes = []
 
-    # time complexity = O(n), space complexity = O(n) in worst case scenario
+    # time complexity = O(n), space complexity (height of recursive stack) = O(n) in worst case scenario, O(logn) in best case scenario
     def inorderTraversal(self, node):
         """Helper function to perform the in-order traversal."""
         if not node:
