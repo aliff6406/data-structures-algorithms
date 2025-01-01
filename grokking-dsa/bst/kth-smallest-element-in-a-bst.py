@@ -15,8 +15,7 @@ class Solution:
         # in order traversal
         """ 
         MY ANSWER:
-        time complexity: O(n) - every node is visited once - can shorten to stop execution once 
-        self.count == k (not sure how to do this) but worst case scenario is still O(n)
+        time complexity: O(k) stops execution once kth smallest element is found
 
         space complexity: O(1) we are only using two extra variables count and result which take linear space
         """
