@@ -20,11 +20,13 @@ class Solution:
 
         space complexity: O(1) we are only using two extra variables count and result which take linear space
         """
-        if root:
-            self.kthSmallest(root.left, k)
-            self.count += 1
-            if self.count == k:
-                self.result = root.val
-            self.kthSmallest(root.right, k)
+        def traverse(node, k):
+            if node and self.count != k:
+                self.kthSmallest(node.left, k)
+                self.count += 1
+                if self.count == k:
+                    self.result = node.val
+                self.kthSmallest(node.right, k)
 
+        traverse(root, k)
         return self.result
