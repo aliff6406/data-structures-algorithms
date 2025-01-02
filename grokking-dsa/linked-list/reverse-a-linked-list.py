@@ -1,3 +1,11 @@
+""" 
+Iterative approach
+
+Time Complexity: O(n) - visits each node of the linked list exactly once
+Space Complexity: O(1) - uses fixed number of extra variables, prev, current and nextNode,
+    hence takes constant space (does not grow with input size (number of nodes in linked list))
+"""
+
 class Node:
     def __init__(self, val=0, next=None):
         self.val = val
