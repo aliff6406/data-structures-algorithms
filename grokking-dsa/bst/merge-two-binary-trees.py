@@ -8,8 +8,9 @@ Recursive approach:
 3. Recursively set the children nodes by calling mergeTrees on both trees' left and right children
 4. return the new root
 
-Time Complexity: O(n) each node is visited exactly once
-Space Complexity: O(n) we are creating a new node for each node in the original trees
+n and m are the number of nodes in the respective trees
+Time Complexity: O(min(n,m)) each node is visited exactly once
+Space Complexity: O(min(n,m)) we are creating a new node for each node in the original trees
 """
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
